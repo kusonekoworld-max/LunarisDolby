@@ -1,0 +1,2 @@
+# Start minimal. Add allow rules only from actual creek build/runtime AVC denials.
+# Do NOT copy the KSU module's sepolicy.rule wholesale.
