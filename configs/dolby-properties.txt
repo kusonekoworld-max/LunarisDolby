@@ -1,6 +1,0 @@
-persist.vendor.audio_fx.current=dolby
-ro.dolby.mod_uuid=false
-ro.dolby.music_stream=false
-ro.audio.ignore_effects=false
-vendor.audio.dolby.ds2.enabled=true
-vendor.audio.dolby.ds2.hardbypass=true

@@ -1,0 +1,9 @@
+android_app_import {
+    name: "LunarisDolby",
+    presigned: true,
+    preprocessed: true,
+    owner: "xiaomi",
+    apk: "proprietary/system_ext/priv-app/LunarisDolby/LunarisDolby.apk",
+    privileged: true,
+    system_ext_specific: true,
+}

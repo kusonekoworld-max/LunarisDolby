@@ -1,2 +1,0 @@
-<!-- Add this Include inside the existing <MediaCodecs> element. -->
-<Include href="media_codecs_dolby_audio.xml" />

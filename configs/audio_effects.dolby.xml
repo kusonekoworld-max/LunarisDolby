@@ -1,5 +1,0 @@
-<!-- Merge these library entries/effects into the existing creek audio_effects.xml.
-     Do not replace the whole file and keep the UUIDs from your existing/previously agreed config. -->
-<library name="dap_mod" path="libswdap.so"/>
-<library name="vqe_mod" path="libswvqe.so"/>
-<library name="gamedap_mod" path="libswgamedap.so"/>

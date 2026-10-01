@@ -1,25 +1,20 @@
-# creek Dolby + Lunaris integration
+# LunarisDolby — creek integration
 
-Curated from the supplied Fix Dolby KSU Lunaris and LunarisDolby packages.
+This repository contains only the LunarisDolby app integration.
 
-Included:
-- 64-bit Dolby DMS HAL and audio libraries
-- Dolby DAX3 config and codec XML
-- LunarisDolby.apk as priv-app
-- Lunaris privapp permissions + hidden API whitelist
-- DMS init/context fragments
-- Integration snippets and proprietary-files.txt
+It intentionally does NOT carry the Dolby DMS HAL, Dolby vendor libraries,
+Motorola framework/apps, KSU module scripts, broad module SELinux policy,
+manifest patching, or resetprop scripts.
 
-Intentionally excluded:
-- MotoSignatureApp / MotoDolbyDax3 / MotorolaSettingsProvider
-- Motorola framework JAR/XML
-- daxService
-- system_support/
-- libsqlite.so
-- libstagefright_foundation.so
-- 32-bit vendor Dolby libraries
-- boot.img
-- module scripts
+The target creek tree is expected to already provide the Dolby DMS 2.0
+service, vendor libraries, VINTF manifest, and audio-effect configuration.
 
-NOTE: audio_effects.xml and the final VINTF manifest must be merged into the creek tree's existing files.
-Do not invent UUIDs. SELinux allow rules should be added from actual build/runtime AVC denials.
+## Integration
+
+Copy the repository contents into the corresponding AOSP/Axion tree, or
+use the provided fragment as a guide.
+
+Required:
+- Android.bp at the source root must be visible to Soong.
+- Add `LunarisDolby` to PRODUCT_PACKAGES.
+- Copy the two XML files to system_ext/etc.
